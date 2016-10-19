@@ -85,9 +85,9 @@ public class RecordActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final int MILLISECONDS = 5000;
+                final int MILLISECONDS = 500;
                 try {
-                    Thread.sleep(MILLISECONDS/2); // wait 2.5 seconds before start recording
+                    Thread.sleep(MILLISECONDS*5); // wait 2.5 seconds before start recording
                     mCamera.takePicture(null, null, mPicture);
                     Thread.sleep(MILLISECONDS);
                     mCamera.takePicture(null, null, mPicture);
